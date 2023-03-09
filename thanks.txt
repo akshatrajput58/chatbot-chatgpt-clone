@@ -1,0 +1,13 @@
+Dear vicpra.com team,
+
+I just wanted to take a moment to express my heartfelt thanks for the amazing AI chatbot you developed, similar to ChatGPT. Your expertise and dedication have truly paid off, and I am so grateful for the incredible tool you have provided.
+
+This chatbot has made a huge difference in my life, allowing me to communicate with others in a seamless and intuitive way. The level of detail and accuracy it provides is truly impressive, and it's clear that your team put a tremendous amount of effort into making it as effective as possible.
+
+Once again, thank you so much for your hard work and commitment to creating such an outstanding tool. Your contributions to the field of AI and chatbot development are truly invaluable, and I feel incredibly lucky to have access to such an amazing resource.
+
+With sincere gratitude,
+
+vicpra worker.
+
+make sure you have => npm v18

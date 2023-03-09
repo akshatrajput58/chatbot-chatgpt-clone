@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>installation</title>
+        <meta name="description" content="vicpra chatbot installation guide">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="https://vicpra.com/images/favicon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://vicpra.com/images/favicon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://vicpra.com/images/favicon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://vicpra.com/images/favicon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://vicpra.com/images/favicon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://vicpra.com/images/favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://vicpra.com/images/favicon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://vicpra.com/images/favicon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://vicpra.com/images/favicon-180x180.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://vicpra.com/images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://vicpra.com/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://vicpra.com/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://vicpra.com/images/favicon-192x192.png">
+        <link rel="shortcut icon" type="image/x-icon" href="https://vicpra.com/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="https://vicpra.com/images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="https://vicpra.com/images/favicon-144x144.png">
+        <meta name="msapplication-config" content="https://vicpra.com/images/browserconfig.xml">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       
+       <div class="container">
+        <h1>Full installation guide</h1>
+        <hr>
+        <div class="content">
+            <h2>Requirements :</h2>
+            <ol>
+                <li>Visual Studio Code. <a href="https://code.visualstudio.com/">Visit</a></li>
+                <li>OpenAi Api Key. <a href="https://platform.openai.com/account/api-keys">Visit</a></li>
+                <li>Node.js v18.12.1. <a href="https://nodejs.org/en/download/">Visit</a></li>
+                <li>Firebase Firestore. <a href="https://console.firebase.google.com/">Visit</a></li>
+                <li>Google Cloud. <a href="https://console.cloud.google.com/">Visit</a></li>
+                <li>Vercel CLI. <a href="https://vercel.com/docs/cli">Visit</a></li>
+                <li>Vercel Account. <a href="https://vercel.com/">Visit</a></li>
+            </ol>
+        </div>
+        <div class="content">
+            <h2>Start development server</h2>
+            <p>open visual studio code and open vicpra-chatbot then run this command make sure you have install nodejs in your system</p>
+            <span style="color: aqua;">npm install</span><br>
+            <span style="color: aqua;">npm run dev</span>
+            <h2>Change website name and image :</h2>
+            <label>Note : Before using the image, you have to add the domain of the image, only then you will be able to add the image, see below to add the domain.</label>
+            <img src="img/3.png" alt="">
+            <p>After downloading and unzipping the file open vicpra-chatbot in Visual Studio Code then open <span>next.config.js</span> file and replace old domain with your new domain.</p>
+            <img src="img/1.png" alt="">
+            <p>Open the <span>app</span> folder, then find a <span>page.tsx</span> file inside it, open it and replace it with whatever you want.</p>
+            <img src="img/2.png" alt="">
+            <p>Open the <span>app</span> folder, then find a <span>head.tsx</span> file inside it, open it and replace title with whatever you want.</p>
+            <img src="img/4.png" alt="">
+            <p>Open <span>public</span> folder and replace favicon with your own favicon.</p>
+            <img src="img/5.png" alt="">
+            <p>To change Chatgpt response image, open <span>pages/api/askQuestion.ts</span> and replace it with your own image.</p>
+            <img src="img/6.png" alt="">
+            <p>To change the image of the login screen, open the <span>components/Login.tsx</span> file and replace it with your own image.</p>
+            <label>If you want to work in localhost then you want to use .env.local file. For server upload it to the online server, then you have to add it to the environment of Vercel.</label>
+            <img src="img/7.png" alt="">
+            <p>First you have to add <span>Google Id</span> and <span>Google Secret</span>.</p>
+            <p>To add google id and google secret in .env file go to firebase console.<a href="https://console.firebase.google.com/" style="color: aqua;">visit</a></p>
+            <p>After login to firebase Add project by clicking on Add project button then open your project</p>
+            <img src="img/8.png" alt="">
+            <p>After clicking on firebase project, click on Build tab, then go to Authentication, then go to sign in method and click on Google icon.</p>
+            <img src="img/9.png" alt="">
+            <img src="img/10.png" alt="">
+            <p>After that click on google and copy paste your google id and secret. on .env file.</p>
+            <img src="img/12.png" alt="">
+            <p>Now we will add the secret key of openai, for that you go to the website of openai <a href="https://platform.openai.com/account/api-keys" style="color: aqua;">visit</a> and create your secret key.</p>
+            <img src="img/11.png" alt="">
+            <p>Now we will add nextauth secret for this we have to copy the value from this website <a href="https://generate-secret.vercel.app/32" style="color: aqua;">visit</a> </p>
+            <img src="img/13.png" alt="">
+            <p>Now we have to enable Google Authentication to login, for that we have to login to Google Cloud <a href="https://console.cloud.google.com/" style="color: aqua;">visit</a> and the account should be same which was used in our firebase account.</p>
+            <img src="img/14.png" alt="">
+            <p>And click on API's & Services tab and then click Credentials.</p>
+            <img src="img/15.png" alt="">
+            <p>After opening the credentials, click on the web client (auto created by google service) link.</p>
+            <img src="img/16.png" alt="">
+            <p>Now add authorization URL.</p>
+            <p>In the Authorized javascript origins field add this value like this <span>https://yourdomain.com/</span>for this type of url add custom domains in vercel. </p>
+            <p>In the Authorized redirect URI's field add this value like this <span>https://yourdomain.com/api/auth/callback/google</span>for this type of url add custom domains in vercel. </p>
+            <img src="img/17.png" alt="">
+            <p>Now we have to create a firestore database in firebase, for this we have to login to firebase then click on build tab then click on Firestore database and create your database.</p>
+            <p>Note : If you want, you can select any rule, production and test, but we will use it for testing purposes, so if you want, you can create a database on test mode.</p>
+            <p>For testing purpose, the rules should look like the ones shown in the image below or you can add your own rules like here <a href="https://firebase.google.com/docs/firestore/security/get-started" style="color: aqua;">visit</a></p>
+            <img src="img/18.png" alt="">
+            <img src="img/20.png" alt="">
+            <p>Now we have to add some important values in <span>firebase.ts</span></p>
+            <p>To add the value, we have to go to firebase, then project settings, then after that we have to click on register app, the steps are given below.</p>
+            <img src="img/19.png" alt="">
+            <img src="img/21.png" alt="">
+            <img src="img/22.png" alt="">
+            <img src="img/23.png" alt="">
+            <p>Copy all values and paste in <span>firebase.ts</span></p>
+            <p>Now we have to add the value of <span>serviceAccountKey.json</span>, for this we have to go to firebase, click on project settings, then click on service account tab, then after clicking on generate new private key, download it.</p>
+            <img src="img/24.png" alt="">
+            <img src="img/25.png" alt="">
+            <p>Open your firebase generated service keys file then copy all the values and replace all the values which are inside <span>serviceAccountKey.json</span>and then save and exit.</p>
+            <img src="img/26.png" alt="">
+            <img src="img/27.png" alt="">
+            <p>Now again copy firebase service account keys and paste it in .env file but before that we have to remove-line-breaks from the text and add it to .env for this you can go to this site <a href="https://www.textfixer.com/tools/remove-line-breaks.php" style="color: aqua;">remove line breaks</a></p>
+            <img src="img/28.png" alt="">
+            <p>When you remove line break then after that you do it. add to .env and save.</p>
+            <p>And run <span>npm install</span>again.</p>
+            <p>After everything is correct, we will deploy it and we will use Vercel to deploy, that too with custom domain <a href="https://vercel.com/dashboard" style="color: aqua;">visit</a>.</p>
+            <p>Now type <span>vercel</span> in terminal and then login with your vercel account.</p>
+            <img src="img/29.png" alt="">
+            <p>Deploying in vercel then copy the Inspect URL and open it on the browser.</p>
+            <img src="img/30.png" alt="">
+            <p>After copying the inspect url go to project settings.</p>
+            <img src="img/31.png" alt="">
+            <p>After opening Settings, open Environment Variables.</p>
+            <img src="img/32.png" alt="">
+            <img src="img/33.png" alt="">
+            <p>Now copy everything inside the .env.local file 'Don't copy this NEXTAUTH_URL=http://localhost:3000' After copying and pasting the environment variables of your vercel project, save it. and run this command <span>vercel --prod</span>.</p>
+            <img src="img/34.png" alt="">
+            <p>If you want to add your custom domain then you will get this error to fix this we have to update our credential in google cloud.</p>
+            <p>You can view your URI's like this.</p>
+            <img src="img/35.png" alt="">
+            <p>Add custom domain in vercel <a href="https://vercel.com/docs/concepts/projects/domains/add-a-domain" style="color: aqua;">https://vercel.com/docs/concepts/projects/domains/add-a-domain</a></p>
+            <p>When you add your custom domain then you give this command again.</p>
+            <p><span>vercel</span></p>
+            <p>or</p>
+            <p><span>vercel --prod</span></p>
+            <p>After everything is complete use your chatbot.</p>
+            <img src="img/36.png" alt="">
+            <p>If you have any problem then you can <a href="https://vicpra.com/ContactUs/" style="color: aqua;">contact us</a>.</p>
+
+        </div>
+
+       </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
